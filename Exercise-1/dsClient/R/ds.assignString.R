@@ -1,5 +1,5 @@
 #' @export
-ds.assign.string <- function(object, string) {
+ds.assign.string <- function(object, string, datasources = NULL) {
 	if(is.null(datasources)){
 		datasources <- datashield.connections_find()
 	}
