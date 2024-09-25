@@ -1,0 +1,4 @@
+AssignMethods:
+	assignStringDS
+AggregateMethods:
+	meanDS
