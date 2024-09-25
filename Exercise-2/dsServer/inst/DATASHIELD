@@ -1,2 +1,4 @@
 AssignMethods:
 	assignStringDS
+AggregateMethods:
+	getColnamesDS
