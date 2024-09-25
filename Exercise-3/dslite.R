@@ -1,3 +1,4 @@
+setwd("./Exercise-3")
 devtools::install("dsServer")
 devtools::install("dsClient")
 
@@ -24,8 +25,8 @@ builder$append(
 logindata.dslite <- builder$build()
 conns <- DSI::datashield.login(
   logins = logindata.dslite,
-  assign=T,
-  symbol = "myTable_table"
+  assign = T,
+  symbol = "myTable"
 )
 
-ds.getColnames("myTable_table")
+ds.getColnames("myTable")

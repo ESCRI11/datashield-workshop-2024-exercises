@@ -1,2 +1,6 @@
 AssignMethods:
 	assignStringDS
+AggregateMethods:
+	getColnamesDS
+Options:
+    myFilter=6
