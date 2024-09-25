@@ -48,6 +48,6 @@ conns <- DSI::datashield.login(
   symbol = "myVector"
 )
 
-ds.mean2("myVector1")
+ds.mean2("myVector")
 
 mean(myVector)
