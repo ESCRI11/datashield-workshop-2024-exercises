@@ -1,4 +1,8 @@
 AssignMethods:
 	assignStringDS
 AggregateMethods:
-	meanDS
+	getColnamesDS,
+	mean2DS
+Options:
+    myFilter=6,
+    myMeanFilter=3

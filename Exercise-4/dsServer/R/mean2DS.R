@@ -1,5 +1,5 @@
 #' @export
-meanDS <- function(numeric_vector) {
+mean2DS <- function(numeric_vector) {
   myMeanFilter <- getOption("myMeanFilter")
   vector_mean <- mean(numeric_vector)
   vector_n <- length(numeric_vector)

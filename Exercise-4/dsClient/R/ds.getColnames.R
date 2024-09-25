@@ -3,7 +3,9 @@ ds.getColnames <- function(table, datasources = NULL) {
 	if(is.null(datasources)){
 		datasources <- datashield.connections_find()
 	}
-	calltext <- call("dsServer::getColnamesDS", table)
-	n_cols <- DSI::datashield.aggregate.expr(datasources, calltext)
-  return(n_cols)
+	calltext <- paste0(
+		"getColnamesDS(", table, ")"
+	)
+	colnames <- DSI::datashield.aggregate(datasources, calltext)
+  	return(colnames)
 }

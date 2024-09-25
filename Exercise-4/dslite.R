@@ -1,3 +1,4 @@
+setwd("./Exercise-4")
 devtools::install("dsServer")
 devtools::install("dsClient")
 
@@ -37,16 +38,16 @@ builder$append(
 builder$append(
   server = "server3",
   url = "dslite.server",
-  table = "myVector3  ",
+  table = "myVector3",
   driver = "DSLiteDriver"
 )
 logindata.dslite <- builder$build()
 conns <- DSI::datashield.login(
   logins = logindata.dslite,
-  assign=T,
+  assign = T,
   symbol = "myVector"
 )
 
-ds.mean("myVector1")
+ds.mean2("myVector1")
 
 mean(myVector)

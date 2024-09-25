@@ -2,4 +2,4 @@
 
 export(assignStringDS)
 export(getColnamesDS)
-export(meanDS)
+export(mean2DS)
